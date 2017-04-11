@@ -29,8 +29,6 @@ $(document).ready(function(){
     $('.boxes').hover(function(){
       $(this).css('background', 'black');
     });
-
-    //$('.boxes').css('background', 'pink');
   }
   makeTable(16);
 
