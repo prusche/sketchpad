@@ -3,41 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Sketch Pad</title>
-    <link rel="stylesheet" href="sketch.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
 
-        <form id="form1"><input id="btn1" type="submit" name="" value="Create Standard Grid"> or enter a number for the size of the pad:
-          <input type="text" size="10" id="name">
-          <input type="submit" id="name" value="Submit" onclick="makeTable()"><br>
-        </form>
+<div class="container">
+<p>To refresh the sketchpad with the standard layout (16x16) <button type="button" name="button" onclick="makeTable(16)">Press Here</button></p>
 
+<p>Or select how many squares across you want the grid?(Please enter a number from 2 to 64)
+<input type="text" id="gridNum" name="" value="">
+<input type="button" name="" value="Submit" onclick="showGrid()"></p>
 
-      <table id="myTable">
-        <tbody id="tableBody">
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-        <tr> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-      </tbody>
-      </table>
+<div class="box"></div>
 
-    </div>
-
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src=sketch.js></script>
+    <script src="sketch.js" type="text/javascript"></script>
   </body>
 </html>
